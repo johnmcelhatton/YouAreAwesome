@@ -50,16 +50,13 @@ struct ContentView: View {
         
         messageString = (messageString == message1 ? message2 : message1 )
         
-        //         imageName = (imageName == "image0" ? "image1" : "image0")
         
-        
-        //TODO: UPDATE VARIABLE
-        
+        imageName = "image\(imageNumber)"
         imageNumber = imageNumber + 1
         if imageNumber > 9{
           imageNumber = 0
         }
-        print(imageNumber)
+        
       }
       
       .buttonStyle(.borderedProminent)
